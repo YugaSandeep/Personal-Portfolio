@@ -1,0 +1,544 @@
+#about, #resume, #portfolio, #contact {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    height: calc(90vh);
+    position: relative;
+}
+
+#about h5, #resume h5, #portfolio h5, #contact h5, .contact-next h5 {
+    color: #cc005f;
+    font-size: 100%;
+    font-family: "poppins-bold", sans-serif;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 5%;
+}
+
+#about h1, #resume h1, #portfolio h1, #contact h1 {
+    color: #151515;
+    font-family: "poppins-medium", sans-serif;
+    font-size: 200%;
+    letter-spacing: -.1rem;
+    position: relative;
+    top: 6%;
+}
+
+.about-content, .resume-content {
+    display: flex;
+    height: 50%;
+}
+
+.about-image {
+    /* width: 20%; */
+    /* margin: 10px 0; */
+    /* margin: auto; */
+}
+
+.about-matter {
+    height: auto;
+    /* width: 70%; */
+    margin: 0 auto;
+}
+
+.about-image img {
+    width: auto;
+    height: 70%;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#about .button {
+    color: #151515;
+    border: 3px solid #151515;
+    padding: 1.8% 2.5%;  
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}
+
+#about .about-content, #about .button, .portfolio-content, .contact-content {
+    position: relative;
+    top: 15%;
+}
+
+
+.about-matter {
+    font-family: "lora-regular", serif;
+    color: #626262;
+    font-size: 110%;
+    padding: 1%;
+}
+
+.about-matter .list {
+    font-family: "poppins-bold", sans-serif;
+    display: flex;
+    flex-direction: column;
+    word-spacing: 5%;
+    /* text-align: left; */
+    gap: 10px;
+}
+
+
+
+/* End of about styles */
+
+.three {
+    background-color: #ebebeb;
+    position: relative;
+}
+
+.resume-content {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    position: relative;
+    top: 10%;
+}
+
+.resume-title {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.accordion-item .question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    height: 4.0rem;
+}
+
+.accordion-item .answer { 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .7s ease-out;
+}
+
+.accordion-item .answer h2 {
+    font-size: 130%;
+}
+
+.accordion-item .answer *{
+    padding-bottom: 1.5%;
+    /* line-height: 50%; */
+    font-size: 96%;
+    font-family: "poppins-medium", sans-serif;
+}
+
+.resume-accordion .title {
+    font-size: 180%;
+    font-family: "poppins-medium", sans-serif;
+    /* margin: 20% 0; */
+}
+
+.resume-accordion {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.accordion-item {
+    border-bottom: 2px solid #151515;
+}
+
+.accordion-item.active .answer {
+    max-height: 1000px;
+    animation: fade 1s ease-in-out;
+}
+
+.accordion-item.active .up-and-down {
+    transform: rotate(180deg);
+}
+
+.up-and-down {
+    transition: transform .6s ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* End of styles for resume */
+
+.portfolio-content {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    font-size: 170%;
+}
+
+.five {
+    background-color: #151515;
+    height: auto;
+}
+
+/* End of styles for portfolio */
+
+
+#contact {
+    width: 100%;
+    /* height: auto; */
+}
+
+#contact h1 {
+    color: white;
+}
+
+.contact-content {
+    height: 70%;
+}
+
+.five .theform {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    font-family: "poppins-bold", sans-serif;
+}
+
+.theform input, .theform textarea {
+    font-family: "poppins-bold", sans-serif;
+    width: 100%;
+    height: 4.5rem;
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #626262;
+}
+
+textarea {
+    /* min-height: 6rem;  */
+    /* height: auto;  */
+    overflow-y: auto;
+    /* min-height: 6rem; */
+    padding: 1.8rem 2px;
+    display: flex;
+    align-items: center;
+}
+
+textarea::placeholder {
+    /* padding: 15px 0px; */
+}
+
+input[type="submit"] {
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    border: none;
+    background: #FF0077;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: "poppins-bold", sans-serif;
+    position: relative;
+    top: 20px;
+}
+
+input[type="submit"]:hover {
+    background: #cc005f;
+}
+
+input[type="email"], input[type="text"], textarea {
+    font-family: "poppins-regular", sans-serif;
+    font-size: 1rem;
+    /* line-height: 3rem; */
+    max-width: 100%;
+    background: none;
+    vertical-align: middle;
+}
+
+.theform input:focus,
+.theform textarea:focus {
+    border-bottom: 1px solid #FF0077; 
+    outline: none; 
+    box-shadow: 0 1px 0 #FF0077;
+    transition: box-shadow 1s ease;
+    background: transparent;
+}
+
+/* end of styles for contact */
+
+.contact-next {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10%;
+    font-family: "poppins-regular", sans-serif;
+}
+
+.contact-next > div {
+    height: 150px;
+    width: 250px;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact-next i {
+    font-size: x-large;
+    color: white;
+}
+
+.contact-next p {
+    font-family: "poppins-regular", sans-serif;
+    color: #626262;
+    font-size: 95%;
+    padding: 1%;
+}
+
+.thefinal {
+    min-height: 150px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.thefinal a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.crbelow {
+    position: relative;
+    top: 85px;
+}
+
+.thefinal span {
+    color: #626262;
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
+    padding: 0 20px;
+}
+
+.thefinal span a {
+    color: #626262;
+}
+
+.thefinal span a:hover {
+    color: #FF0077;
+}
+
+#span 
+{
+    border-right: 3px solid rgba(255, 255, 255, 0.3);   
+}
+
+@media(max-width: 1370px) {
+    #about, #resume {
+        width: 80%;
+    }
+    #resume {
+        height: 120vh;
+    }
+}
+
+@media(max-width: 1024px) {
+    #about, #resume {
+        width: 100%;
+    }
+    .about-content, .resume-content {
+        height: 50%;
+        padding: 1.5%;
+    }
+    .contact-content {
+        width: 100%;
+    }
+    .five .theform {
+        width: 50%;
+    }
+    .theform input[type="submit"] {
+        height: 3.5rem;
+    }
+}
+
+@media(max-width: 970px) {
+    #about, #resume {
+        width: 100%;
+    }
+    .about-content, .resume-content {
+        height: 50%;
+        padding: 1.5%;
+    }
+    .about-matter .list {
+        /* height: 50%; */
+        gap: 10px;
+        position: relative;
+        bottom: 10px;
+    }
+    .about-matter {
+        margin: 0 auto;
+        /* margin-right: 5px; */
+        font-size: 100%;
+    }
+    #resume h1 {
+        font-size: 175%;
+    }
+    #resume h2 {
+        font-size: 150%;
+    }
+}
+
+@media(max-width: 875px) {
+    .about-matter, .resume-accordion {
+        width: 90%;
+        margin: auto;
+    }
+    #about .button {
+        position: relative;
+        top: 15%;
+    }
+    .accordion-item .question {
+        height: 3rem;
+    }
+}
+
+@media(max-width: 768px) {
+    #about{
+        height: 600px;
+    }
+    #resume {
+        height: auto;
+    }
+    .middle1 {
+        height: 40px;
+    }
+    .resume-accordion, #contact {
+        width: 100%;
+    }
+    #about h5, #resume h5, #portfolio h5, #contact h5, .contact-next h5 {
+        font-size: 90%;
+    }
+    #about h1, #resume h1, #portfolio h1, #contact h1 {
+        font-size: 150%;
+    }
+    #resume h2 {
+        font-size: 110%;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+    .resume-content {
+        display: grid;
+        grid-template-columns: 100% !important;
+    }
+    .about-image img {
+        height: auto;
+        width: 20%;
+        margin: 0;
+    }
+    .about-matter {
+        width: 99%;
+        font-size: 90%;
+    }
+    #about .about-image {
+        position: relative;
+        bottom: 30px;
+    }
+    #about .button{
+        position: relative;
+        top: 150px;
+        font-size: 85%;
+        font-weight: 650;
+    }
+    .contact-next {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 600px) {
+    .contact-content {
+        width: 100%;
+    }
+    .five .theform {
+        width: 80%;
+    }
+    .theform input, .theform textarea {
+        height: 3.5rem;
+    }
+}
+
+@media(max-width: 460px) {
+    #about {
+        height: 600px;
+    }
+    .about-matter {
+        font-size: 90%;
+        gap: 20px;
+        /* text-align: left; */
+    }
+    #about .button{
+        position: relative;
+        top: 33%; 
+    }
+    #resume-title {
+        font-size: 50%;
+    }
+    input[type="email"], input[type="text"], textarea {
+        font-size: .9rem;
+    }
+}
+
+@media(max-width: 426px) {
+    .about-image img {
+        height: auto;
+        width: 40%;
+        margin: 0;
+    }
+    .about-matter {
+        font-size: 80%;
+        text-align: left;
+    }
+    /* #resume h1 {
+        font-size: 130%;
+    } */
+    .accordion-item .answer {
+        font-size: 85%;
+    }
+    .theform input, .theform textarea {
+        height: 3.5rem;
+    }
+    .theform input[type="submit"] {
+        height: 3rem;
+    }
+    .copyright {
+        font-size: 90%;
+        flex-direction: column;
+    }
+    .copyright span, #span {
+        border: none;
+    }
+    
+}
+
+@media(max-width: 325px) {
+    .about-matter {
+        font-size: 75%;
+    }
+    .theform input, .theform textarea {
+        height: 3rem;
+    }
+    
+    .lastmiddle {
+        height: 10px;
+    }
+    .thefinal {
+        position: relative;
+        bottom: 15px;
+    }
+    
+}

@@ -1,0 +1,204 @@
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+}
+
+.one {
+    background: #151515;
+    width: 100%;
+}
+
+#intro {
+    height: calc(100vh - 80px);
+    /* height: auto; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+}
+
+.intro-content h5 {
+    color: #cc005f;
+    font-size: 1.5rem;
+    font-family: "poppins-bold", sans-serif;
+    /* letter-spacing: .3rem; */
+    text-transform: uppercase;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.intro-content h1 {
+    color: #FFFFFF;
+    font-family: "poppins-medium", sans-serif;
+    /* line-height: 1.071; */
+    margin-top: 0;
+    margin-bottom: .6rem;
+    font-size: 5.5rem;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    letter-spacing: -.1rem;
+}
+
+#intro p span {
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
+    border-right: 3px solid rgba(255, 255, 255, 0.3);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 2px 30px;
+}
+
+#intro h1, #intro span, #intro a {
+    color: rgb(255, 255, 255);
+}
+
+.intro-content a {
+    position: relative;
+    top: 20px;
+}
+
+.intro-content .button {
+    color: #FFFFFF !important;
+    border-color: rgba(255, 255, 255, 0.3);
+    margin-top: .6rem;
+    padding: 1.4% 2%;
+    
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+}
+
+.intro-content a, #about a {
+    font-family: "poppins-bold", sans-serif;
+    text-decoration: none;
+    font-weight: 555;
+    /* padding: 500px; */
+}
+
+.button {
+    background: transparent !important;
+    border: 3px solid #5d5c5c;
+    line-height: 4.8rem;
+}
+
+.intro-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.intro-social li a {
+    font-size: 22px;
+}
+
+.intro-content a:hover, .intro-content a:active, #about a:hover {
+    border-color: #FF0077;
+    transition: all 0.5s ease-in-out
+}
+
+a:hover {
+    color: #FF0077;
+}
+
+.intro-social, .copyright {
+    position: relative;
+    top: 66px;
+}
+
+@media(max-width: 1024px) {
+    #intro {
+        width: 100%;
+    }
+    .intro-content h1 {
+        font-size: 4rem;
+    }
+    #intro p span {
+        font-size: 1.1rem;
+        padding: 2px 20px;
+    }
+    /* .intro-content a */
+    .intro-content .button {
+        margin-top: 0.8rem;
+        letter-spacing: .15rem;
+    }
+    .button.stroke {
+        line-height: 3.8rem;
+    }
+}
+
+@media(max-width: 768px) {
+    #intro {
+        width: 100%;
+    }
+    .intro-content h5 {
+        font-size: 1.5rem;
+    }
+    .intro-content h1 {
+        font-size: 3rem;
+    }
+    #intro p span {
+        font-size: 1rem;
+        padding: 2px 15px;
+    }
+    .intro-content a {
+        margin-top: .6rem;
+        letter-spacing: .1rem;
+        font-size: 0.9rem;
+    }
+    .button.stroke {
+        line-height: 2.5rem;
+    }
+}
+
+@media(max-width: 480px) {
+    #intro {
+        width: 100%;
+    }
+    .intro-content h5 {
+        font-size: 1rem;
+    }
+    .intro-content h1 {
+        font-size: 2rem;
+    }
+    #intro p span {
+        font-size: 0.9rem;
+        padding: 2px 10px;
+    }
+    .intro-content a {
+        margin-top: .4rem;
+        /* letter-spacing: .1rem; */
+        font-size: 0.7rem;
+    }
+    .button.stroke {
+        line-height: 2rem;
+    }
+    .intro-social {
+        gap: 35px;
+    }
+    .intro-social li a {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 380px) {
+    .intro-content a {
+        margin-top: .4rem;
+        /* letter-spacing: .1rem; */
+        font-size: 0.6rem;
+    }
+    .button.stroke {
+        line-height: 1.9rem;
+    }
+}
+
+/* End of styles for intro */
+
+/* @media(min-width: 769px) { */
+    .middle{
+        height: 80px;
+    }
+/* } */
